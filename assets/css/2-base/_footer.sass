@@ -1,0 +1,57 @@
+.home-wrap 
+   footer
+      height: 60px
+      background: url(/assets/img/bg_head.png)
+         position: center
+         size: full
+         repeat: no-repeat
+      background-size: cover
+      padding: 0
+      margin: 0
+      
+      .logo
+         +hide-text
+         float: left
+         margin: 5px 0 0 30px
+         max-width: 150px
+         color: white
+         background: 
+            image: url(/assets/img/logo.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+         height: 50px
+         padding: 0 
+      
+      .site-nav
+         float: right
+         margin: 0px 20px 0 0
+         
+         ul
+           list-style: none
+           margin: 22px 0 0 0
+         
+           text-align: left
+
+         li
+            display: inline-block
+            margin-left: 20px
+            font:
+               size: 14px
+               weight: 400
+         a
+            color: white
+            &:hover
+               color: lightgreen
+            &:last-child
+               margin-bottom: 0
+            
+@media (max-width: 775px)
+   .home-wrap 
+      footer
+         width: auto 
+         height: 60px
+               
+         .site-nav,
+         .email-link
+            display: none
