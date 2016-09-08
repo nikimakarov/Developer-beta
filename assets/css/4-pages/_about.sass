@@ -1,41 +1,43 @@
 section.about
-      background: white
-      
-      h4
-         text-align: center
-         text-transform: uppercase
-         color: $text-color
+	background: white
+	h4
+		text-align: center
+		text-transform: uppercase
+		color: $text-color
+		padding-bottom: 30px
 
-      .face-lockup
-         +display(flex)
-         +align-items(center)
-         +justify-content(space-around)
+	.face-lockup
+		+display(flex)
+		+align-items(center)
+		+justify-content(space-around)
 
-         .face-img
-            +size(150px)
-            margin: auto
-            border-radius: 50%
-            background: url(/assets/img/portrait.jpg)
-               position: center
-               size: contain
-               repeat: no-repeat
-            border: $border-color solid 2px
-      .blurb
-         text-align: center
-         max-width: 680px
-         margin: 30px auto
-         padding: 0 15px
-         float: center
-         font-size: 20px
-         font-weight: 200
-         
-@media (max-width: 455px)
-   section.about
-         h4
-            font-size: 18px
-         .face-lockup
-            .face-img
-               +size(120px)
-         .blurb
-            font-size: 15px
-            margin: 15px auto
+		.face-img
+			+size(150px)
+			margin: auto
+			border-radius: 50%
+			background: url(/assets/img/portrait.jpg)
+				position: center
+				size: contain
+				repeat: no-repeat
+			border: $border-color solid 2px
+
+	.blurb
+		text-align: center
+		max-width: 680px
+		margin: 30px auto
+		padding: 0 15px
+		float: center
+		font-size: 20px
+		font-weight: 200
+
+@media (max-width: 498px)
+	section.about
+		h4
+			font-size: 14px
+	
+		.face-lockup
+			.face-img
+				+size(120px)
+		.blurb
+			font-size: 15px
+			margin: 5px auto
