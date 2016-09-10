@@ -1,10 +1,22 @@
 section.portfolio
-	h4 Portfolio
-	.thumb-container
-		|	{% for project in site.data.settings.projects %}
-		a.thumb-unit(href='', style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.png);')
-			.thumb-overlay
-				p {{ project.name }}
-		|	{% endfor %}
-		
-	
+	h4 Портфолио
+	//Portfolio
+	.portfolio-slider
+		.thumb-wrap
+			.thumb-container
+				|	{% for project in site.data.settings.projects %}
+				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg);')
+					.thumb-overlay
+						p {{ project.name }}
+				|	{% endfor %}
+		.work-wrap
+			.work-container
+				.work-return
+				h4 Работы
+				//Do Work
+				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
+				p pic a
+				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
+				p pic b
+				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
+				p pic c

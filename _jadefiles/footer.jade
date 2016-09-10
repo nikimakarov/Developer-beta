@@ -1,18 +1,17 @@
 mixin nav-content()
    ul
-     li: a(href="#about") About
-     li: a(href="#design") Design
-     li: a(href="#articles") Articles
-     li: a(href="#mobile") Mobile
-     li: a(href="#notes") Notes
-     li: a(href="#contacts") Contacts
+     li: a(href="#about") Обо мне
+     li: a(href="#portfolio") Портфолио
+     li: a(href="#articles") Статьи
+     li: a(href="#notes") Заметки
+     li: a(href="#contacts") Контакты
      
 .mobile-nav
       +nav-content()
 
 footer
    .footer-position
-      h3.logo.round NM
+      h3.logo.round НМ
 
       nav.site-nav
          +nav-content()
