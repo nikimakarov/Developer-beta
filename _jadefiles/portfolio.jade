@@ -5,7 +5,7 @@ section.portfolio
 		.thumb-wrap
 			.thumb-container
 				|	{% for project in site.data.settings.projects %}
-				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg);')
+				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.png);')
 					.thumb-overlay
 						p {{ project.name }}
 				|	{% endfor %}

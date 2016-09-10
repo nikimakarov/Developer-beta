@@ -1,0 +1,81 @@
+section.contact
+	background: white
+	text-align: center
+	h4
+		text-align: center
+		text-transform: uppercase
+		color: $text-color
+		padding-bottom: 30px
+	.social-links
+		max-width: 700px
+		margin: 0px auto 50px
+		+display(flex)
+		+justify-content(space-around)
+		.icon-vk
+			+size(65px)
+			background: url(/assets/img/icons/vk.png)
+				position: center
+				repeat: no-repeat
+				size: cover
+			+transition(all .1s ease-in-out)
+			&:hover
+				+transform(scale(1.3))
+			@media(max-width: 470px)
+				+size(55px)
+		.icon-be
+			+size(65px)
+			background: url(/assets/img/icons/behance.png)
+				position: center
+				repeat: no-repeat
+				size: cover
+			+transition(all .1s ease-in-out)
+			&:hover
+				+transform(scale(1.3))
+			@media(max-width: 470px)
+				+size(55px)
+		.icon-sky
+			+size(65px)
+			background: url(/assets/img/icons/skype.png)
+				position: center
+				repeat: no-repeat
+				size: cover
+			+transition(all .1s ease-in-out)
+			&:hover
+				+transform(scale(1.3))
+			@media(max-width: 470px)
+				+size(55px)
+		.icon-lin
+			+size(65px)
+			background: url(/assets/img/icons/linkedin.png)
+				position: center
+				repeat: no-repeat
+				size: cover
+			+transition(all .1s ease-in-out)
+			&:hover
+				+transform(scale(1.2))  
+			@media(max-width: 470px)
+				+size(55px)
+	.bar
+		width: 250px
+		height: 0px
+		border-top: 4px solid $aqua
+		margin: 0px auto 30px
+	
+	a.is-link
+		font: 
+			size: 60px
+			weight: 400
+		color: $aqua
+		text-align: center
+		letter-spacing: 0.05em
+		clear: both
+		padding-top: 10px
+		+transition
+		&:hover
+			color: $light-green
+		@media (max-width: 690px)
+			font: 
+				size: 40px
+		@media (max-width: 470px)
+			font: 
+				size: 25px
