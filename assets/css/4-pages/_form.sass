@@ -1,0 +1,59 @@
+section.form
+	background: $light-green
+	h4
+		text-align: center
+		text-transform: uppercase
+		color: white
+		padding-top: 60px
+		@media (max-width: 690px)
+			padding-top: 30px
+		@media (max-width: 498px)
+				font-size: 14px
+
+	form
+		max-width: 450px
+		margin: 0 auto 50px
+
+		input, textarea
+			border: 3px solid $aqua
+			width: 100%
+			+box-sizing(border-box)
+			padding: 10px
+			&:focus
+				outline: none
+				border-color: $purple
+	
+		.wrap
+			text-align: right
+		[type="submit"]
+			color: white
+			background: $primary-color
+			font-size: 1.5em
+			text-transform: uppercase
+			width: auto
+			&:hover
+				background: $indigo
+	
+		textarea
+			height: 10em
+			font-weight: 700
+	
+	label
+		display: block
+		margin-top: 20px
+		font-weight: 700
+		color: $aqua
+		margin-bottom: 15px
+		span
+			display: block
+	
+	.half
+		width: 50%
+		float: left
+		+box-sizing(border-box)
+	
+		&:nth-child(1)
+			padding-right: 10px
+	
+		&:nth-child(2)
+			padding-left: 10px

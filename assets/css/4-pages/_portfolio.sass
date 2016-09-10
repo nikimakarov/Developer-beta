@@ -1,22 +1,23 @@
 section.portfolio
+	background: $good-night
 	overflow-x: hidden
 	h4
 		text-align: center
 		text-transform: uppercase
-		color: $text-color
+		color: white
 	.portfolio-slider
 		width: 200%
 		position: relative
 		left: 0%
 		+transition(all 800ms)
-		
+
 		.thumb-wrap
 			width: 50%
 			float: left
 		.work-wrap
 			width: 50%
 			float: left
-	
+
 		.thumb-container
 			margin: 35px 30px 0 30px
 			padding-bottom: 50px
@@ -74,13 +75,13 @@ section.portfolio
 				&:hover .thumb-overlay
 					top: 0%
 					background: fade-out($dark-blue, 0.1)
-	
+
 		.work-container
 			max-width: 600px
 			margin: 0px auto
 			display: none
 			h4
-				color: black
+				color: white
 				font-weight: 300
 				font-size: 24px
 				line-height: 1.2
@@ -93,22 +94,22 @@ section.portfolio
 			.work-return
 				+size(40px)
 				+position(relative, 35px null null -60px)
-				background: url(/assets/img/arrow_back_button.svg)
+				background: url(/assets/img/back.svg)
 					position: center
 					repeat: no-repeat
 					size: cover
 				cursor: pointer
 				opacity: 0.5
-	
+
 				//@media (max-width: 740px)
 				//	+position(relative, 67px null null 10px)
-	
+
 				path
 					fill: rgba(0,0,0,0.4)
-	
+
 				&:hover
 					opacity: 1
-	
+
 @media (max-width: 740px)
 	section.portfolio
 		.portfolio-slider
@@ -119,7 +120,7 @@ section.portfolio
 					+position(relative, 0px null null 80px)
 				.work-return
 					+position(relative, 35px null null 10px)
-		
+
 	@media (max-width: 498px)
 		section.portfolio
 			h4

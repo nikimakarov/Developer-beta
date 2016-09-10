@@ -1,11 +1,12 @@
 section.portfolio
+	#portfolio
 	h4 Портфолио
 	//Portfolio
 	.portfolio-slider
 		.thumb-wrap
 			.thumb-container
 				|	{% for project in site.data.settings.projects %}
-				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.png);')
+				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg);')
 					.thumb-overlay
 						p {{ project.name }}
 				|	{% endfor %}
