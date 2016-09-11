@@ -1,20 +1,13 @@
-mixin nav-content()
-   ul
-      li: a(href="#about") Обо мне
-      li: a(href="#portfolio") Портфолио
-      li: a(href="#contact") Контакты
-      li: a(href="#letter") Письмо
-.mobile-nav
-      +nav-content()
-
 header
    .header-position
       h1.logo НМ
 
       nav.site-nav
-         +nav-content()
-
-      .mobile-nav-toggle: span
+          ul
+            li: a(href="#about") Обо мне
+            li: a(href="#portfolio") Портфолио
+            li: a(href="#contact") Контакты
+            li: a(href="#letter") Письмо
       
       h1
        span Никита Макаров

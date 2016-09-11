@@ -6,18 +6,14 @@ section.portfolio
 		.thumb-wrap
 			.thumb-container
 				|	{% for project in site.data.settings.projects %}
-				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.jpg);')
+				a.thumb-unit(style='background-image: url(/assets/img/work/{{ project.folder }}/thumb.png);')
 					.thumb-overlay
 						p {{ project.name }}
 				|	{% endfor %}
 		.work-wrap
 			.work-container
 				.work-return
-				h4 Работы
+				h4 Подробнее (в стадии заполнения)
 				//Do Work
 				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
-				p pic a
-				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
-				p pic b
-				.work-unit(style='width: 600px; height: 500px; background: #ccc;')
-				p pic c
+				p Здесь будет описание

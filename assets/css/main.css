@@ -378,16 +378,20 @@ body {
           flex-direction: row;
       -ms-flex-align: center;
           align-items: center; }
-    .home-wrap header .site-nav,
-    .home-wrap header .email-link {
-      display: none; }
     .home-wrap header .logo {
-      margin-top: 0;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 30px;
+      float: center;
+      margin: 0 0 0 20px;
       padding: 0;
       height: 50px; }
+    .home-wrap header .site-nav {
+      position: center;
+      float: center;
+      margin: 10px 0 20px 0; }
+      .home-wrap header .site-nav ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        text-align: center; }
     .home-wrap header .mobile-nav-toggle {
       display: -ms-flexbox;
       display: flex; }
@@ -397,7 +401,7 @@ body {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
 
-@media (max-width: 455px) {
+@media (max-width: 467px) {
   .home-wrap header h1 {
     font-size: 40px; }
     .home-wrap header h1 span {
@@ -405,7 +409,21 @@ body {
       margin: 5px 10px; }
   .home-wrap header .centered {
     font-weight: 500;
-    font-size: 13px; } }
+    font-size: 13px; }
+  .home-wrap header .site-nav {
+    margin-top: 0px;
+    width: 80%; } }
+
+@media (max-width: 446px) {
+  .home-wrap header .logo {
+    height: 40px;
+    width: 40px; } }
+
+@media (max-width: 350px) {
+  .home-wrap header .site-nav {
+    width: 100%; }
+  .home-wrap header .logo {
+    display: none; } }
 
 .home-wrap footer {
   height: 60px;
@@ -583,11 +601,11 @@ section.portfolio {
         display: table;
         clear: both; }
       section.portfolio .portfolio-slider .thumb-container .thumb-unit {
-        width: 25%;
+        width: 50%;
         display: block;
         float: left;
         position: relative;
-        padding-top: 17%;
+        padding-top: 26%;
         overflow: hidden;
         background-position: center center;
         background-repeat: no-repeat;
@@ -646,6 +664,9 @@ section.portfolio {
         section.portfolio .portfolio-slider .thumb-container .thumb-unit:hover .thumb-overlay {
           top: 0%;
           background: rgba(0, 0, 153, 0.9); }
+      @media (max-width: 760px) {
+        section.portfolio .portfolio-slider .thumb-container {
+          padding-bottom: 0px; } }
     section.portfolio .portfolio-slider .work-container {
       max-width: 600px;
       margin: 0px auto;

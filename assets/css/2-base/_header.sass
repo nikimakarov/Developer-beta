@@ -163,17 +163,22 @@
             flex-direction: row
             align-items: center
 
-         .site-nav,
-         .email-link
-            display: none
 
          .logo
-            margin-top: 0
-            margin-left: 0
-            margin-right: 0
-            margin-bottom: 30px
+            float: center
+            margin: 0 0 0 20px
             padding: 0
             height: 50px
+         
+         .site-nav
+            position: center
+            float: center
+            margin: 10px 0 20px 0
+            ul
+              list-style: none
+              margin: 0
+              padding-left: 0
+              text-align: center
 
          .mobile-nav-toggle
             display: flex
@@ -183,7 +188,7 @@
          float: right
          transform: translateY(0%)
          
-@media (max-width: 455px)
+@media (max-width: 467px)
    .home-wrap
       header
          h1
@@ -195,3 +200,19 @@
             font:
                 weight: 500
                 size: 13px
+         .site-nav
+            margin-top: 0px
+            width: 80%
+            
+@media (max-width: 446px)
+   .home-wrap
+      header
+         .logo
+            +size(40px)
+@media (max-width: 350px)
+   .home-wrap
+      header
+         .site-nav
+            width: 100%
+         .logo
+            display: none

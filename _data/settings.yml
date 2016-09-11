@@ -6,10 +6,6 @@ projects:
 - {name: Colorlist, folder: 'proj-2'}
 - {name: GitTrends, folder: 'proj-3'}
 - {name: Jotter, folder: 'proj-4'}
-- {name: EEEEEEEEEEE, folder: 'proj-5'}
-- {name: FFFFFFFFFFF, folder: 'proj-6'}
-- {name: GGGGGGGGGGG, folder: 'proj-7'}
-- {name: HHHHHHHHHHH, folder: 'proj-8'}
 
 #---------------------------
 # Form Section
