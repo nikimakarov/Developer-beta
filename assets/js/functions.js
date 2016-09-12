@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	smoothScroll(300);
 	portfolioSlide();
-   jQuery("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
+   jQuery("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '45px' });
 });
 
 	function smoothScroll (duration) {
